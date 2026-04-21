@@ -1,5 +1,5 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
+title: Enterprise Active Directory Lab
+description: Windows Server infrastructure lab with Active Directory, DNS, DHCP, NAT, PowerShell automation, and a domain-joined client
+theme: minima
+show_downloads: false
 google_analytics:
-theme: jekyll-theme-hacker

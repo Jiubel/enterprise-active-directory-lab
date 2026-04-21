@@ -2,6 +2,11 @@
 layout: default
 title: Enterprise Active Directory Lab
 ---
+<div style="text-align: right;">
+  <a href="https://github.com/Jiubel/enterprise-active-directory-lab" target="_blank" class="github-btn">
+    View on GitHub →
+  </a>
+</div>
 
 # 🛠️ Enterprise Active Directory & Network Lab
 

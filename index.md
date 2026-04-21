@@ -74,4 +74,6 @@ Used PowerShell to automate bulk user provisioning using a structured input file
 ---
 
 ## Summary
-This project demonstrates hands-on experience with enterprise-level Windows infrastructure, including identity management, networking, and automation. The environment reflects a practical implementation of services commonly used in IT support and system administration roles.
+This project simulates a production style Windows domain environment by integrating Active Directory, DNS, DHCP, and NAT within a segmented internal network. It demonstrates practical experience in configuring identity services, managing network infrastructure, and automating administrative tasks using PowerShell.
+
+The implementation reflects real world system administration workflows, including user provisioning, domain integration, and end-to-end connectivity validation across internal and external networks.

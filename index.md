@@ -1,123 +1,72 @@
 ---
 layout: default
+title: Enterprise Active Directory Lab
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# 🛠️ Enterprise Active Directory & Network Lab
 
-[Link to another page](./another-page.html).
+## Overview
+Designed and implemented a Windows-based enterprise lab environment to simulate core infrastructure services including Active Directory, DNS, DHCP, and network routing.
 
-There should be whitespace between paragraphs.
+The lab consists of a Windows Server 2019 Domain Controller and a Windows 10 client connected through an isolated internal network, with NAT configured to allow external connectivity.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+---
 
-# Header 1
+## Lab Architecture
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+![Lab Diagram](/images/lab-diagram.png)
 
-## Header 2
+---
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## Key Components
 
-### Header 3
+### Domain Controller (Windows Server 2019)
+- Active Directory Domain Services (AD DS)
+- DNS Server
+- DHCP Server
+- RRAS (NAT Gateway)
+- Internal IP: 172.16.0.1/24
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+### Network Configuration
+- Internal Network: 172.16.0.0/24
+- DHCP Scope: 172.16.0.100–200
+- Gateway: 172.16.0.1
+- DNS: 172.16.0.1
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+### Client System (Windows 10)
+- DHCP Enabled
+- Domain Joined (mydomain.com)
+- Verified authentication and connectivity
 
-#### Header 4
+---
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+## Automation
 
-##### Header 5
+Used PowerShell to automate bulk user provisioning using a structured input file.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+![PowerShell Automation](/images/powershell-bulk-user-creation.png)
 
-###### Header 6
+---
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+## Validation
 
-### There's a horizontal rule below this.
+### Domain Authentication
+![Domain Login](/images/domain-user-login-proof.png)
 
-* * *
+### Network Connectivity
+![Connectivity Test](/images/client-internet-connectivity.png)
 
-### Here is an unordered list:
+---
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+## Key Skills Demonstrated
 
-### And an ordered list:
+- Active Directory Administration  
+- Windows Server Configuration  
+- Network Services (DNS, DHCP, NAT)  
+- PowerShell Automation  
+- System Integration & Troubleshooting  
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+---
 
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+## Summary
+This project demonstrates hands-on experience with enterprise-level Windows infrastructure, including identity management, networking, and automation. The environment reflects a practical implementation of services commonly used in IT support and system administration roles.
